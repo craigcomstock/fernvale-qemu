@@ -1,0 +1,13 @@
+to build
+
+./configure --disable-werror --enable-debug --target-list=arm-softmmu
+make
+
+to run, do the following in order in separate terminals
+NOTE: I haven't gotten this to work yet, probably due to fernvale-qemu currently wanting an FPGA ROM emulation component (I think?)
+
+in fernly:
+./build/fernly-usb-loader -w /dev/ttyUSB0 ./build/usb-loader.bin ./build/firmware.bin
+
+and here:
+./run.sh
