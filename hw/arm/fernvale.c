@@ -23,7 +23,7 @@
 
 #include "sysemu/char.h"
 
-#define FERNVALE_DEBUG_UART "/dev/ttymxc2"
+#define FERNVALE_DEBUG_UART "/dev/ttyUSB0"
 #define FERNVALE_DEBUG_PROMPT "fernly>"
 #define FERNVALE_READY_CHAR 'k'
 static int fernvale_fd;
